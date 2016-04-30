@@ -22,13 +22,16 @@ hi Smr2_2		term=underline cterm=NONE ctermfg=White ctermbg=Cyan gui=NONE guifg=N
 hi Smr2_3		term=underline cterm=NONE ctermfg=White ctermbg=Red gui=NONE guifg=None guibg=Red
 hi Smr2_4		term=underline cterm=NONE ctermfg=White ctermbg=Magenta gui=NONE guifg=None guibg=Magenta
 hi Smr2_5		term=underline cterm=NONE ctermfg=White ctermbg=Yellow gui=NONE guifg=None guibg=Yellow
-hi Smr2_6		term=underline cterm=reverse ctermfg=None ctermbg=Blue gui=NONE guifg=None guibg=Blue
-hi Smr2_7		term=underline cterm=reverse ctermfg=None ctermbg=Green gui=NONE guifg=None guibg=Green
-hi Smr2_8		term=underline cterm=reverse ctermfg=None ctermbg=Cyan gui=NONE guifg=None guibg=Cyan
-hi Smr2_9		term=underline cterm=reverse ctermfg=None ctermbg=Red gui=NONE guifg=None guibg=Red
-hi Smr2_10		term=underline cterm=reverse ctermfg=None ctermbg=Magenta gui=NONE guifg=None guibg=Magenta
-hi Smr2_11		term=underline cterm=reverse ctermfg=None ctermbg=Yellow gui=NONE guifg=None guibg=Yellow
+hi Smr2_6		term=underline cterm=reverse ctermfg=White ctermbg=Blue gui=NONE guifg=None guibg=Blue
+hi Smr2_7		term=underline cterm=reverse ctermfg=White ctermbg=Green gui=NONE guifg=None guibg=Green
+hi Smr2_8		term=underline cterm=reverse ctermfg=White ctermbg=Cyan gui=NONE guifg=None guibg=Cyan
+hi Smr2_9		term=underline cterm=reverse ctermfg=White ctermbg=Red gui=NONE guifg=None guibg=Red
+hi Smr2_10		term=underline cterm=reverse ctermfg=White ctermbg=Magenta gui=NONE guifg=None guibg=Magenta
+hi Smr2_11		term=underline cterm=reverse ctermfg=White ctermbg=Yellow gui=NONE guifg=None guibg=Yellow
 
+let s:unused = []
+let s:registered = {}
+let s:used = {}
 
 function! simplehl#init()
 	let s:unused = []

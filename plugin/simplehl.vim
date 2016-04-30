@@ -16,8 +16,6 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-call simplehl#init()
-
 nnoremap <silent> <Plug>(simplehl::toggle) :SimplehlToggle<CR>
 nnoremap <silent> <Plug>(simplehl::reset) :SimplehlReset<CR>
 
