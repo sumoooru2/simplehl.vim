@@ -16,18 +16,18 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-hi Smr2_0		term=underline cterm=NONE ctermfg=White ctermbg=Blue gui=NONE guifg=None guibg=Blue
-hi Smr2_1		term=underline cterm=NONE ctermfg=White ctermbg=Green gui=NONE guifg=None guibg=Green
-hi Smr2_2		term=underline cterm=NONE ctermfg=White ctermbg=Cyan gui=NONE guifg=None guibg=Cyan
-hi Smr2_3		term=underline cterm=NONE ctermfg=White ctermbg=Red gui=NONE guifg=None guibg=Red
-hi Smr2_4		term=underline cterm=NONE ctermfg=White ctermbg=Magenta gui=NONE guifg=None guibg=Magenta
-hi Smr2_5		term=underline cterm=NONE ctermfg=White ctermbg=Yellow gui=NONE guifg=None guibg=Yellow
-hi Smr2_6		term=underline cterm=reverse ctermfg=Blue ctermbg=White gui=NONE guifg=None guibg=Blue
-hi Smr2_7		term=underline cterm=reverse ctermfg=Green ctermbg=White gui=NONE guifg=None guibg=Green
-hi Smr2_8		term=underline cterm=reverse ctermfg=Cyan ctermbg=White gui=NONE guifg=None guibg=Cyan
-hi Smr2_9		term=underline cterm=reverse ctermfg=Red ctermbg=White gui=NONE guifg=None guibg=Red
-hi Smr2_10		term=underline cterm=reverse ctermfg=Magenta ctermbg=White gui=NONE guifg=None guibg=Magenta
-hi Smr2_11		term=underline cterm=reverse ctermfg=Yellow  ctermbg=White gui=NONE guifg=None guibg=Yellow
+hi Smr2_0   term=underline  cterm=NONE ctermfg=White   ctermbg=Blue     gui=NONE guifg=White   guibg=Blue   
+hi Smr2_1   term=underline  cterm=NONE ctermfg=White   ctermbg=Green    gui=NONE guifg=White   guibg=Green  
+hi Smr2_2   term=underline  cterm=NONE ctermfg=White   ctermbg=Cyan     gui=NONE guifg=White   guibg=Cyan   
+hi Smr2_3   term=underline  cterm=NONE ctermfg=White   ctermbg=Red      gui=NONE guifg=White   guibg=Red    
+hi Smr2_4   term=underline  cterm=NONE ctermfg=White   ctermbg=Magenta  gui=NONE guifg=White   guibg=Magenta
+hi Smr2_5   term=underline  cterm=NONE ctermfg=White   ctermbg=Yellow   gui=NONE guifg=White   guibg=Yellow 
+hi Smr2_6   term=underline  cterm=NONE ctermfg=Blue    ctermbg=White    gui=NONE guifg=Blue    guibg=White  
+hi Smr2_7   term=underline  cterm=NONE ctermfg=Green   ctermbg=White    gui=NONE guifg=Green   guibg=White  
+hi Smr2_8   term=underline  cterm=NONE ctermfg=Cyan    ctermbg=White    gui=NONE guifg=Cyan    guibg=White  
+hi Smr2_9   term=underline  cterm=NONE ctermfg=Red     ctermbg=White    gui=NONE guifg=Red     guibg=White  
+hi Smr2_10  term=underline  cterm=NONE ctermfg=Magenta ctermbg=White    gui=NONE guifg=Magenta guibg=White  
+hi Smr2_11  term=underline  cterm=NONE ctermfg=Yellow  ctermbg=White    gui=NONE guifg=Yellow  guibg=White  
 
 let s:unused = []
 let s:registered = {}
