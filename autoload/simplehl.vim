@@ -34,32 +34,32 @@ let b:registered = {}
 let b:used = {}
 
 function! simplehl#init()
-	let b:unused = []
-	let b:registered = {}
-	let b:used = {}
-	call clearmatches()
+    let b:unused = []
+    let b:registered = {}
+    let b:used = {}
+    call clearmatches()
 endfunction
 
 function! simplehl#toggle(word)
-	if has_key(b:registered, a:word)
+    if has_key(b:registered, a:word)
         let l:wid = win_getid()
         let l:elem = remove(b:registered, a:word)
-		windo call matchdelete(l:elem)
-		call insert(b:unused, remove(b:used, a:word), 0)
+        windo call matchdelete(l:elem)
+        call insert(b:unused, remove(b:used, a:word), 0)
         call win_gotoid(l:wid)
-	else
-		if empty(b:unused)
-			let b:unused = [
-						\'Smr2_0', 'Smr2_1', 'Smr2_2', 'Smr2_3', 'Smr2_4', 'Smr2_5',
-						\'Smr2_6', 'Smr2_7', 'Smr2_8', 'Smr2_9', 'Smr2_10', 'Smr2_11'
-						\]
-		endif
-		let l:next = remove(b:unused, 0)
+    else
+        if empty(b:unused)
+            let b:unused = [
+                        \'Smr2_0', 'Smr2_1', 'Smr2_2', 'Smr2_3', 'Smr2_4', 'Smr2_5',
+                        \'Smr2_6', 'Smr2_7', 'Smr2_8', 'Smr2_9', 'Smr2_10', 'Smr2_11'
+                        \]
+        endif
+        let l:next = remove(b:unused, 0)
         let l:wid = win_getid()
-		windo let  b:registered[a:word] = matchadd(l:next, '\<' . a:word . '\>')
+        windo let  b:registered[a:word] = matchadd(l:next, '\<' . a:word . '\>')
         call win_gotoid(l:wid)
-		let b:used[a:word] = l:next
-	endif
+        let b:used[a:word] = l:next
+    endif
 endfunction
 
 
