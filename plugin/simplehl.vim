@@ -19,7 +19,7 @@ nnoremap <silent> <Plug>(simplehl::toggle) :SimplehlToggle<CR>
 nnoremap <silent> <Plug>(simplehl::reset) :SimplehlReset<CR>
 
 command! -nargs=0 SimplehlToggle call simplehl#toggle(expand('<cword>'))
-command! -nargs=0 SimplehlReset call simplehl#init()
+command! -nargs=0 SimplehlReset call simplehl#reset()
 
 
 let &cpo = s:save_cpo
